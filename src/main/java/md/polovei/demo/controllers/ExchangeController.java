@@ -1,18 +1,15 @@
 package md.polovei.demo.controllers;
 
-import md.polovei.demo.models.CurrencyDictionary;
 import md.polovei.demo.models.Exchange;
 import md.polovei.demo.service.CurrencyDictionaryService;
 import md.polovei.demo.service.ExchangeService;
 import org.json.JSONObject;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.beans.propertyeditors.CurrencyEditor;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
-import java.util.Date;
 
 @RestController
 @RequestMapping("/api/exchange")

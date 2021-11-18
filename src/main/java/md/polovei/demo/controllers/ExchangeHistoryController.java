@@ -1,8 +1,6 @@
 package md.polovei.demo.controllers;
 
 import md.polovei.demo.models.ExchangeHistory;
-import md.polovei.demo.repository.CurrencyDictionaryRepository;
-import md.polovei.demo.repository.ExchangeHistoryRepository;
 import md.polovei.demo.service.CurrencyDictionaryService;
 import md.polovei.demo.service.EmployeeService;
 import md.polovei.demo.service.ExchangeHistoryService;
@@ -14,8 +12,6 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
-
-import javax.swing.text.html.parser.Entity;
 
 @RestController
 @RequestMapping("/api/exHistory")

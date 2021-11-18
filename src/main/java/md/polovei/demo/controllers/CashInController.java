@@ -9,10 +9,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
-import javax.ws.rs.core.Response;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
-import java.util.Optional;
 
 @RestController
 @RequestMapping("/api/cashIn")
@@ -39,7 +37,7 @@ public class CashInController {
             SimpleDateFormat formatter = new SimpleDateFormat("yyyy-MM-dd");
 
             if (employeeService.getById(jsonObject.getLong("employee")).isPresent()
-            && currencyDictionaryService.getById(jsonObject.getString("currency")).isPresent()){
+                    && currencyDictionaryService.getById(jsonObject.getString("currency")).isPresent()) {
                 cash.setEmployee(employeeService.getById(jsonObject.getLong("employee")).get());
                 cash.setCurrency(currencyDictionaryService.getById(jsonObject.getString("currency")).get());
                 cash.setInDate(formatter.parse(jsonObject.getString("inDate")));
