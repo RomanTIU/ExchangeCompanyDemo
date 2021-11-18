@@ -18,7 +18,8 @@ dependencies {
     implementation group: 'org.springframework.boot', name: 'spring-boot-starter-data-rest', version: '2.5.5'
     implementation group: 'javax.ws.rs', name: 'javax.ws.rs-api', version: '2.0'
     implementation 'mysql:mysql-connector-java:8.0.25'
-    implementation 'jakarta.xml.bind:jakarta.xml.bind-api:3.0.1'
+     implementation 'org.glassfish.jaxb:jaxb-runtime:2.3.2'
+	implementation group: 'javax.xml.bind', name: 'jaxb-api', version: '2.3.1'
     implementation group: 'org.glassfish.jersey.core', name: 'jersey-common', version: '2.35'
     implementation group: 'org.json', name: 'json', version: '20210307'
 
